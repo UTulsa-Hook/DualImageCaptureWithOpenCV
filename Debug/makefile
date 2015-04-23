@@ -44,7 +44,7 @@ all: DualImageCaptureWithOpenCV
 DualImageCaptureWithOpenCV: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L"/home/loyd-hook/0Projects/SV/software/eclipse_ws/DualImageCaptureWithOpenCV/lib/x86_64" -L/usr/local/lib -o "DualImageCaptureWithOpenCV" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/usr/local/lib -L"/home/hutch/workspace/DualImageCaptureWithOpenCV/lib/x86_64" -o "DualImageCaptureWithOpenCV" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
